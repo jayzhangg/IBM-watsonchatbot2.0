@@ -28,8 +28,9 @@ var context;  // Very important. Holds all the data for the current point of the
  * @param {Object} e - Information about the keyboard event. 
  */
 function newEvent(e) {
-	// Only check for a return/enter press - Event 13
+    // Only check for a return/enter press - Event 13
     if (e.which === 13 || e.keyCode === 13) {
+        e.preventDefault();
 
         var userInput = document.getElementById('chatMessage');
         var text = userInput.value;  // Using text as a recurring variable through functions
@@ -41,7 +42,7 @@ function newEvent(e) {
 			
 			// Display the user's text in the chat box and null out input box
             displayMessage(text, user);
-            userInput.value = '';
+            userInput.value = null;
             userMessage(text);
             
         } else {
