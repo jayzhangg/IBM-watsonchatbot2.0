@@ -34,8 +34,8 @@ app.listen(appEnv.port, '0.0.0.0', function() {
 *************************************************************************************************/
 var conversation = new AssistantV1({ 
     version: '2018-02-16',
-    username: 'd7c168d5-1cec-4a55-87b7-a3c2f5b73ff6',
-    password: 'SmR0PHyNBTQV'
+    username: 'd30cdba6-5b5a-4081-acca-5c1eb04bb780',
+    password: 'IBQ7CQSPeDn0'
 });
 
 // Allow clients to interact with the bot
@@ -44,7 +44,7 @@ app.post('/api/bot', function(req, res) {
     console.log("Got request for Flower Bot");
     console.log("Request is: ",req);
 
-    var workspace = '5d2a6a41-3c44-4595-957e-ecd29184e807'; // Set to your Conversation workspace ID
+    var workspace = '26286a18-0eb9-43f9-9821-80a7a6f21c0f'; // Set to your Conversation workspace ID
 
     if (!workspace) {
         console.log("No workspace detected. Cannot run the Watson Conversation service.");
