@@ -1,5 +1,15 @@
----
 applications:
-- name: sample-nodejs-helloworld
-  random-route: true
-  memory: 256M
+- services:
+  - conversation-bot
+  host: botstarter
+  disk: 512M
+  name: botstarter
+  command: node app.js
+  path: .
+  domain: mybluemix.net
+  memory: 512M
+  instances: 1
+declared-services:
+  conversation-bot:
+    label: conversation
+    plan:  free

@@ -1,26 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-  <head>
-    <title>Watson IBM Chatbot</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/style.css">
-  </head>
-
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        </td>
-        <td>
-          <h1 id="message">Hello Guysdss!</h1>
-          <p class='description'></p> Thanks forsdas creating a <span class = "blue">NodeJS Starter Application</span>.
-        </td>
-      </tr>
-    </table>
-  </body>
-
+<head>
+<title>Watson Conversation Bot Starter</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="css/bot.css">
+</head>
+<body onload="userMessage('');">
+<div class="container">
+    <div class="chatbot">
+        <div id="chatBox" class="dialogContainer"></div>
+        <textarea rows="1" id="chatMessage" class="dialogInput" placeholder="Say Something" onkeypress="return newEvent(event)"></textarea>
+    </div><!-- End class chatbot --> 
+</div><!-- End class container -->
+</body>
+<script src="src/bot.js"></script>
 </html>
