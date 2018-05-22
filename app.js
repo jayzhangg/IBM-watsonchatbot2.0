@@ -41,7 +41,7 @@ var conversation = new AssistantV1({
 // Allow clients to interact with the bot
 app.post('/api/bot', function(req, res) {
     
-    console.log("Got request for Flower Bot");
+    console.log("Got request for IBM Bot");
     console.log("Request is: ",req);
 
     var workspace = '26286a18-0eb9-43f9-9821-80a7a6f21c0f'; // Set to your Conversation workspace ID
@@ -73,7 +73,6 @@ app.post('/api/bot', function(req, res) {
             console.log("Error in sending message: ", err);
             return res.status(err.code || 500).json(err);
         }
-
         console.log("Response: ", data);
 
         return res.json(data);
