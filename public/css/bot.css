@@ -54,6 +54,7 @@ body {
     color: #225282;
 }
 
+
 .message {
     margin-top: 0.5em;
     font-size: 13px;
@@ -64,7 +65,7 @@ body {
 .bot {
     padding: 0.5em;
     border-radius: 5px;
-    background-color: rgba(90,171,164,1.0);
+    background-color:#1d3458;
     margin-left: 0.5em;
     margin-right: 30%;
     -webkit-align-self: flex-start;
