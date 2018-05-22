@@ -14,9 +14,16 @@ body {
 
 	align-items: center;
     justify-content: center;
+    position: relative;
 
-    background-color: #7f7f7f;
+    background-color: #1D69B4;
 
+}
+
+.logo {
+    position: absolute;
+    top: 0%;
+    max-width: 100%;
 }
 
 .dialogContainer {
