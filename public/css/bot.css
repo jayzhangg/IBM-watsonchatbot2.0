@@ -117,7 +117,7 @@ body {
 .user {
     padding: 0.5em;
     border-radius: 5px;
-    background-color: rgba(34,82,130,0.9);
+    background-color: #0000f7;
     position: relative;
     width: 200px;
     left: 70px;
@@ -132,13 +132,13 @@ body {
 }
     
 .user:after {
-    content: ' ';
+    content: '';
     position: absolute;
     width: 10px;
     height: 10px;
     left: 185px;
     top: -5px;
-    background:rgba(34,82,130,0.9);
+    background: #0000f7;
     -webkit-transform: skew(0, -45deg);
     -moz-transform: skew(0, -45deg);
     transform: skew(0, -45deg);
