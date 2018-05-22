@@ -21,13 +21,15 @@ body {
 }
 
 .logo {
-    position: absolute;
-    top: 0%;
+    position: relative;
+    top: -43vh;
+    left: 12vw;
     max-width: 100%;
 }
 
 .dialogContainer {
-    display: flex;
+    position: relative;
+    left: -8vw;
     flex-direction: column;
     font-size: 14px;
     width: 300px;
@@ -50,6 +52,8 @@ body {
 }
 
 .dialogInput {
+    position: relative;
+    left: -8vw;
     width: 300px;
     margin-top: 15px;
     border: 1px solid rgba(86,167,161,1.0);
