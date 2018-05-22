@@ -126,9 +126,9 @@ function displayMessage(text, user) {
 
     // Set chat bubble color and position based on the user parameter
 	if (user === watson) {
-        bubble.innerHTML = "<div class='bot'>" + text + "</div>";
+        bubble.innerHTML = "<img id = 'hi' src = 'css/img/IBM_Watson_Logo_2017.png'/> <div class='bot'>" + text + "</div>";
     } else {
-        bubble.innerHTML = "<div class='user'>" + text + "</div>";
+        bubble.innerHTML = "<img id = 'hi2' src = 'css/img/gender-neutral-user.png'/> <div class='user'>" + text + "</div>";
     }
 
     chat.appendChild(bubble);

@@ -14,25 +14,33 @@ body {
 
 	align-items: center;
     justify-content: center;
+    position: relative;
 
-    background-color: darkslategrey;
+    background-color: #1D69B4;
 
 }
 
+.logo {
+    position: relative;
+    top: -43vh;
+    left: 12vw;
+    max-width: 100%;
+}
+
 .dialogContainer {
-    display: flex;
+    position: relative;
+    left: -8vw;
     flex-direction: column;
     font-size: 14px;
     width: 300px;
-    height: 300px;
-    max-height: 300px;
+    height: 450px;
     margin: 0;
-    border-radius: 0px;
+    border-radius: 20px;
     padding: 10px;
-    background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/watson.png");
-    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/watson.png");
-    background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/watson.png");
-    background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/watson.png");
+    background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/IBM_Watson_Logo_2017.png");
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/IBM_Watson_Logo_2017.png");
+    background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/IBM_Watson_Logo_2017.png");
+    background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/IBM_Watson_Logo_2017.png");
     background-attachment: inherit;
     background-position: center center;
     background-repeat: no-repeat;
@@ -44,20 +52,33 @@ body {
 }
 
 .dialogInput {
+    position: relative;
+    left: -8vw;
     width: 300px;
     margin-top: 15px;
     border: 1px solid rgba(86,167,161,1.0);
     height: 20px;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 20px;
     font-size: 13px;
     padding: 10px;
     color: #225282;
+}
+#hi {
+    height: 30px;
+    width: 30px;
+}
+
+#hi2 {
+    height: 30px;
+    width: 30px;  
+    margin-left: 22vw;
 }
 
 .message {
     margin-top: 0.5em;
     font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #fff;
 }
@@ -66,8 +87,10 @@ body {
     padding: 0.5em;
     border-radius: 5px;
     background-color: rgba(90,171,164,1.0);
-    margin-left: 0.5em;
-    margin-right: 30%;
+    position: relative;
+    width: 200px;
+    left: 5px;
+    top: 7px;
     -webkit-align-self: flex-start;
     align-self: flex-start;
 	-webkit-animation: fadein 2s; 
@@ -76,21 +99,51 @@ body {
          -o-animation: fadein 2s; 
             animation: fadein 2s;
 }
+    
+.bot:after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 20px;
+    top: -5px;
+    background: rgba(90,171,164,1.0);
+    -webkit-transform: skew(0, 45deg);
+    -moz-transform: skew(0, 45deg);
+    transform: skew(0, 45deg);
+}
+
 
 .user {
     padding: 0.5em;
     border-radius: 5px;
-    background-color: rgba(34, 82, 130, 0.9);
-    margin-right: 0.5em;
-    margin-left: 30%;
-    -webkit-align-self: flex-end;
-    align-self: flex-end;
-	-webkit-animation: fadein 1s; 
-       -moz-animation: fadein 1s;
-        -ms-animation: fadein 1s; 
-         -o-animation: fadein 1s; 
-            animation: fadein 1s;
+    background-color: rgba(34,82,130,0.9);
+    position: relative;
+    width: 200px;
+    left: 70px;
+    top: 7px;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+	-webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
 }
+    
+.user:after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 185px;
+    top: -5px;
+    background:rgba(34,82,130,0.9);
+    -webkit-transform: skew(0, -45deg);
+    -moz-transform: skew(0, -45deg);
+    transform: skew(0, -45deg);
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
