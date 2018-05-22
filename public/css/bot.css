@@ -15,7 +15,7 @@ body {
 	align-items: center;
     justify-content: center;
 
-    background-color: #006699;
+    background-color: #7f7f7f;
 
 }
 
@@ -26,12 +26,12 @@ body {
     width: 300px;
     height: 450px;
     margin: 0;
-    border-radius: 0px;
+    border-radius: 20px;
     padding: 10px;
-    background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/watson.png");
-    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/watson.png");
-    background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/watson.png");
-    background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/watson.png");
+    background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/IBM_Watson_Logo_2017.png");
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/IBM_Watson_Logo_2017.png");
+    background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/IBM_Watson_Logo_2017.png");
+    background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("img/IBM_Watson_Logo_2017.png");
     background-attachment: inherit;
     background-position: center center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ body {
     border: 1px solid rgba(86,167,161,1.0);
     height: 20px;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 20px;
     font-size: 13px;
     padding: 10px;
     color: #225282;
