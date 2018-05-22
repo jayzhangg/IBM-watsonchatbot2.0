@@ -72,7 +72,7 @@ body {
 #hi2 {
     height: 30px;
     width: 30px;  
-    margin-left: 22vw;
+    margin-left: 18vw;
 }
 
 .message {
@@ -132,13 +132,13 @@ body {
 }
     
 .user:after {
-    content: '';
+    content: ' ';
     position: absolute;
     width: 10px;
     height: 10px;
     left: 185px;
     top: -5px;
-    background: #0000f7;
+    background:#0000f7;
     -webkit-transform: skew(0, -45deg);
     -moz-transform: skew(0, -45deg);
     transform: skew(0, -45deg);
