@@ -22,14 +22,14 @@ body {
 
 .logo {
     position: relative;
-    top: -43vh;
-    left: 123vw;
+    top: -40vh;
+    left: 10vw;
     max-width: 100%;
 }
 
 .dialogContainer {
     position: relative;
-    left: -9vw;
+    left: -8vw;
     flex-direction: column;
     font-size: 14px;
     width: 300px;
@@ -53,7 +53,7 @@ body {
 
 .dialogInput {
     position: relative;
-    left: -9vw;
+    left: -8vw;
     width: 300px;
     margin-top: 15px;
     border: 1px solid rgba(86,167,161,1.0);
