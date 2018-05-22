@@ -15,7 +15,7 @@ body {
 	align-items: center;
     justify-content: center;
 
-    background-color: #7f7f7f;
+    background-color: #006699;
 
 }
 
@@ -53,11 +53,21 @@ body {
     padding: 10px;
     color: #225282;
 }
+#hi {
+    height: 30px;
+    width: 30px;
+}
 
+#hi2 {
+    height: 30px;
+    width: 30px;  
+    margin-left: 22vw;
+}
 
 .message {
     margin-top: 0.5em;
     font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #fff;
 }
@@ -65,9 +75,11 @@ body {
 .bot {
     padding: 0.5em;
     border-radius: 5px;
-    background-color:#1d3458;
-    margin-left: 0.5em;
-    margin-right: 30%;
+    background-color: rgba(90,171,164,1.0);
+    position: relative;
+    width: 200px;
+    left: 5px;
+    top: 7px;
     -webkit-align-self: flex-start;
     align-self: flex-start;
 	-webkit-animation: fadein 2s; 
@@ -76,21 +88,51 @@ body {
          -o-animation: fadein 2s; 
             animation: fadein 2s;
 }
+    
+.bot:after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 20px;
+    top: -5px;
+    background: rgba(90,171,164,1.0);
+    -webkit-transform: skew(0, 45deg);
+    -moz-transform: skew(0, 45deg);
+    transform: skew(0, 45deg);
+}
+
 
 .user {
     padding: 0.5em;
     border-radius: 5px;
-    background-color: rgba(34, 82, 130, 0.9);
-    margin-right: 0.5em;
-    margin-left: 30%;
-    -webkit-align-self: flex-end;
-    align-self: flex-end;
-	-webkit-animation: fadein 1s; 
-       -moz-animation: fadein 1s;
-        -ms-animation: fadein 1s; 
-         -o-animation: fadein 1s; 
-            animation: fadein 1s;
+    background-color: rgba(34,82,130,0.9);
+    position: relative;
+    width: 200px;
+    left: 70px;
+    top: 7px;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+	-webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
 }
+    
+.user:after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 185px;
+    top: -5px;
+    background:rgba(34,82,130,0.9);
+    -webkit-transform: skew(0, -45deg);
+    -moz-transform: skew(0, -45deg);
+    transform: skew(0, -45deg);
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
