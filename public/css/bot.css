@@ -22,8 +22,8 @@ body {
 
 .logo {
     position: relative;
-    top: -42vh;
-    left: 10vw;
+    top: -320px;
+    left: 150px;
     max-width: 100%;
 }
 
@@ -72,7 +72,7 @@ body {
 #hi2 {
     height: 30px;
     width: 30px;  
-    margin-left: 18vw;
+    margin-left: 260px;
 }
 
 .message {
